@@ -33,6 +33,14 @@ Then initiate the following commands one by one by typing them in and hitting en
     make clobber
     make installclean
 
+Have some lunch:
+
+    lunch
+
+select option 37 and hit enter then wait a minute.
+
+Was it good?
+
 Now build the rom:
 
     brunch vigor
