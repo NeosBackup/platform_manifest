@@ -2,11 +2,11 @@
     <manifest>
 
       <remote  name="aosp"
-	  		   fetch="https://android.googlesource.com/" /> 
+               fetch="https://android.googlesource.com/" /> 
 
       <remote  name="aokp"
-	           fetch="https://github.com/"
-	           review="gerrit.sudoservers.com" />
+               fetch="https://github.com/"
+               review="gerrit.sudoservers.com" />
 
 	  <remote  name="cm"
 			   fetch="https://github.com/CyanogenMod/"
