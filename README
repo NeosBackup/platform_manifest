@@ -11,6 +11,11 @@ After sync, type the following commands to remove these two files:
     rm device/htc/vigor/overlay/packages/apps/Settings/res/values/config.xml
     rm device/htc/vigor/overlay/packages/apps/Torch/res/values/config.xml
 
+Please take note that removing this xml may cause you to lose building the torch.apk
+and you wil need to pull it from any available rom if you want a working torch icon. 
+Any ICS or JB AOSP rom will do. This is necessary for the moment to allow it to build
+and I'm too lazy right now to modify the line in it to allow build :P
+
 Go into your "build" directory:
 
     cd build
