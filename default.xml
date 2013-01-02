@@ -394,4 +394,4 @@
 	  <project path="device/samsung/p3113" name="AOKP/android_device_samsung_p3113" remote="aokp" revision="jb" />
 	  <project path="device/samsung/quincy-common" name="AOKP/android_device_samsung_quincy-common" remote="aokp" revision="jb" />
 	  <project path="device/samsung/quincyatt" name="AOKP/android_device_samsung_quincyatt" remote="aokp" revision="jb" />
-	</manifest>
+	</manifest> 
