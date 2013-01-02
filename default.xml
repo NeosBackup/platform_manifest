@@ -8,109 +8,109 @@
                fetch="https://github.com/"
                review="gerrit.sudoservers.com" />
 
-	  <remote  name="cm"
-			   fetch="https://github.com/CyanogenMod/"
-			   review="review.cyanogenmod.com" />
+      <remote  name="cm"
+               fetch="https://github.com/CyanogenMod/"
+               review="review.cyanogenmod.com" />
 			   
-	  <remote  name="gh"
-			   fetch="https://github.com/"
-			   review="gerrit.aokp.co"
-			   revision="jellybean" /> 
+      <remote  name="gh"
+               fetch="https://github.com/"
+               review="gerrit.aokp.co"
+               revision="jellybean" /> 
          
       <remote  name="ghh"
-  		       fetch="https://github.com/"
-			   review="gerrit.aokp.co"
-			   revision="jb" /> 
+               fetch="https://github.com/"
+               review="gerrit.aokp.co"
+               revision="jb" /> 
          
       <remote  name="ghhh"
-    	       fetch="https://github.com/"
-			   review="gerrit.aokp.co"
-			   revision="master" />
+               fetch="https://github.com/"
+               review="gerrit.aokp.co"
+               revision="master" />
 			   
-	  <default remote="aosp"
-			   sync-j="7" />
+      <default remote="aosp"
+                   sync-j="7" />
 			   
-	  <project path="build" name="AOKP/android_build" remote="aokp" revision="jb" >
-		<copyfile src="core/root.mk" dest="Makefile" />
-	  </project>
-	  <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="bionic" name="AOKP/android_bionic" remote="aokp" revision="jb" />
-	  <project path="bootable/bootloader/legacy" name="android_bootable_bootloader_legacy" remote="cm" revision="jellybean" />
-	  <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" revision="jellybean" />
-	  <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="jellybean" />
-	  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="dalvik" name="AOKP/platform_dalvik" remote="aokp" revision="jb" />
-	  <project path="development" name="AOKP/platform_development" remote="aokp" revision="jb" />
+      <project path="build" name="AOKP/android_build" remote="aokp" revision="jb" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+      </project>
+      <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="bionic" name="AOKP/android_bionic" remote="aokp" revision="jb" />
+      <project path="bootable/bootloader/legacy" name="android_bootable_bootloader_legacy" remote="cm" revision="jellybean" />
+      <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" revision="jellybean" />
+      <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="jellybean" />
+      <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="dalvik" name="AOKP/platform_dalvik" remote="aokp" revision="jb" />
+      <project path="development" name="AOKP/platform_development" remote="aokp" revision="jb" />
 	  
       <project path="device/asus/grouper" name="AOKP/android_device_asus_grouper" remote="aokp" revision="jb" />
-	  <project path="device/asus/tf101" name="AOKP/device_asus_tf101" remote="aokp" revision="jb" />
-	  <project path="device/asus/tf-common" name="AOKP/device_asus_tf-common" remote="aokp" revision="jb" />
-	  <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/generic/armv7-a" name="device/generic/armv7-a" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/htc/evita" name="AOKP/android_device_htc_evita" remote="aokp" revision="jb" />
-	  <project path="device/htc/msm8660-common" name="Chad0989/android_device_htc_msm8660-common" remote="gh" revision="jellybean" />
-	  <project path="device/htc/msm8960-common" name="AOKP/android_device_htc_msm8960-common" remote="aokp" revision="jb" />
-	  <project path="device/htc/vigor" name="Chad0989/device_htc_vigor" remote="gh" revision="jellybean" />
-	  <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="device/samsung/aries-common" name="AOKP/device_samsung_aries-common" remote="aokp" revision="jb" />
-	  <project path="device/samsung/captivatemtd" name="AOKP/device_samsung_captivatemtd" remote="aokp" revision="jb" />
-	  <project path="device/samsung/crespo" name="AOKP/device_samsung_crespo" remote="aokp" revision="jb" />
-	  <project path="device/samsung/crespo4g" name="AOKP/device_samsung_crespo4g" remote="aokp" revision="jb" />
-	  <project path="device/samsung/d2-common" name="AOKP/android_device_samsung_d2-common" remote="aokp" revision="jb" />
-	  <project path="device/samsung/d2att" name="AOKP/device_samsung_d2att" remote="aokp" revision="jb" />
-	  <project path="device/samsung/d2tmo" name="AOKP/android_device_samsung_d2tmo" remote="aokp" revision="jb" />
-	  <project path="device/samsung/d2usc" name="AOKP/device_samsung_d2usc" remote="aokp" revision="jb" />
-	  <project path="device/samsung/d2vzw" name="AOKP/device_samsung_d2vzw" remote="aokp" revision="jb" />
-	  <project path="device/samsung/fascinatemtd" name="AOKP/device_samsung_fascinatemtd" remote="aokp" revision="jb" />
-	  <project path="device/samsung/galaxysmtd" name="AOKP/device_samsung_galaxysmtd" remote="aokp" revision="jb" />
-	  <project path="device/samsung/galaxys2-common" name="AOKP/android_device_samsung_galaxys2-common" remote="aokp" revision="jb" />
-	  <project path="device/samsung/i9100" name="AOKP/device_samsung_i9100" remote="aokp" revision="jb" />
-	  <project path="device/samsung/i9100g" name="AOKP/device_samsung_i9100g" remote="aokp" revision="jb" />
-	  <project path="device/samsung/i9300" name="AOKP/device_samsung_i9300" remote="aokp" revision="jb" />
-	  <project path="device/samsung/hercules" name="AOKP/device_samsung_hercules" remote="aokp" revision="jb" />
-	  <project path="device/samsung/n7000" name="AOKP/android_device_samsung_n7000" remote="aokp" revision="jb" />
-	  <project path="device/samsung/maguro" name="AOKP/device_samsung_maguro" remote="aokp" revision="jb" />
-	  <project path="device/samsung/msm8660-common" name="AOKP/android_device_samsung_msm8660-common" remote="aokp" revision="jb" />
-	  <project path="device/samsung/msm8960-common" name="AOKP/android_device_samsung_msm8960-common" remote="aokp" revision="jb" />
-	  <project path="device/samsung/qcom-common" name="AOKP/device_samsung_qcom-common" remote="aokp" revision="jb" />
-	  <project path="device/samsung/toro" name="AOKP/device_samsung_toro" remote="aokp" revision="jb" />
-	  <project path="device/samsung/toroplus" name="AOKP/android_device_samsung_toroplus" remote="aokp" revision="jb" />
-	  <project path="device/samsung/tuna" name="AOKP/device_samsung_tuna" remote="aokp" revision="jb" />
-	  <project path="device/samsung/vibrantmtd" name="AOKP/device_samsung_vibrantmtd" remote="aokp" revision="jb" />
-	  <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/asus/tf101" name="AOKP/device_asus_tf101" remote="aokp" revision="jb" />
+      <project path="device/asus/tf-common" name="AOKP/device_asus_tf-common" remote="aokp" revision="jb" />
+      <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/generic/armv7-a" name="device/generic/armv7-a" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/htc/evita" name="AOKP/android_device_htc_evita" remote="aokp" revision="jb" />
+      <project path="device/htc/msm8660-common" name="Chad0989/android_device_htc_msm8660-common" remote="gh" revision="jellybean" />
+      <project path="device/htc/msm8960-common" name="AOKP/android_device_htc_msm8960-common" remote="aokp" revision="jb" />
+      <project path="device/htc/vigor" name="Chad0989/device_htc_vigor" remote="gh" revision="jellybean" />
+      <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="device/samsung/aries-common" name="AOKP/device_samsung_aries-common" remote="aokp" revision="jb" />
+      <project path="device/samsung/captivatemtd" name="AOKP/device_samsung_captivatemtd" remote="aokp" revision="jb" />
+      <project path="device/samsung/crespo" name="AOKP/device_samsung_crespo" remote="aokp" revision="jb" />
+      <project path="device/samsung/crespo4g" name="AOKP/device_samsung_crespo4g" remote="aokp" revision="jb" />
+      <project path="device/samsung/d2-common" name="AOKP/android_device_samsung_d2-common" remote="aokp" revision="jb" />
+      <project path="device/samsung/d2att" name="AOKP/device_samsung_d2att" remote="aokp" revision="jb" />
+      <project path="device/samsung/d2tmo" name="AOKP/android_device_samsung_d2tmo" remote="aokp" revision="jb" />
+      <project path="device/samsung/d2usc" name="AOKP/device_samsung_d2usc" remote="aokp" revision="jb" />
+      <project path="device/samsung/d2vzw" name="AOKP/device_samsung_d2vzw" remote="aokp" revision="jb" />
+      <project path="device/samsung/fascinatemtd" name="AOKP/device_samsung_fascinatemtd" remote="aokp" revision="jb" />
+      <project path="device/samsung/galaxysmtd" name="AOKP/device_samsung_galaxysmtd" remote="aokp" revision="jb" />
+      <project path="device/samsung/galaxys2-common" name="AOKP/android_device_samsung_galaxys2-common" remote="aokp" revision="jb" />
+      <project path="device/samsung/i9100" name="AOKP/device_samsung_i9100" remote="aokp" revision="jb" />
+      <project path="device/samsung/i9100g" name="AOKP/device_samsung_i9100g" remote="aokp" revision="jb" />
+      <project path="device/samsung/i9300" name="AOKP/device_samsung_i9300" remote="aokp" revision="jb" />
+      <project path="device/samsung/hercules" name="AOKP/device_samsung_hercules" remote="aokp" revision="jb" />
+      <project path="device/samsung/n7000" name="AOKP/android_device_samsung_n7000" remote="aokp" revision="jb" />
+      <project path="device/samsung/maguro" name="AOKP/device_samsung_maguro" remote="aokp" revision="jb" />
+      <project path="device/samsung/msm8660-common" name="AOKP/android_device_samsung_msm8660-common" remote="aokp" revision="jb" />
+      <project path="device/samsung/msm8960-common" name="AOKP/android_device_samsung_msm8960-common" remote="aokp" revision="jb" />
+      <project path="device/samsung/qcom-common" name="AOKP/device_samsung_qcom-common" remote="aokp" revision="jb" />
+      <project path="device/samsung/toro" name="AOKP/device_samsung_toro" remote="aokp" revision="jb" />
+      <project path="device/samsung/toroplus" name="AOKP/android_device_samsung_toroplus" remote="aokp" revision="jb" />
+      <project path="device/samsung/tuna" name="AOKP/device_samsung_tuna" remote="aokp" revision="jb" />
+      <project path="device/samsung/vibrantmtd" name="AOKP/device_samsung_vibrantmtd" remote="aokp" revision="jb" />
+      <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
 	  
       <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/aac" name="platform/external/aac" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/apache-http" name="platform/external/apache-http" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/apache-xml" name="platform/external/apache-xml" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/astl" name="platform/external/astl" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/bash" name="android_external_bash" remote="cm" revision="jellybean" />
-	  <project path="external/bison" name="platform/external/bison" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/blktrace" name="platform/external/blktrace" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/bluetooth/bluez" name="AOKP/external_bluetooth_bluez" remote="aokp" revision="jb" />
-	  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/bouncycastle" name="platform/external/bouncycastle" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/bsdiff" name="platform/external/bsdiff" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="jellybean" />
-	  <project path="external/bzip2" name="platform/external/bzip2" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/checkpolicy" name="platform/external/checkpolicy" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/chromium" name="AOKP/external_chromium" remote="aokp" revision="jb" />
-	  <project path="external/chromium-trace" name="platform/external/chromium-trace" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/cibu-fonts" name="platform/external/cibu-fonts" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/clang" name="platform/external/clang" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/compiler-rt" name="platform/external/compiler-rt" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/dbus" name="platform/external/dbus" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/dexmaker" name="platform/external/dexmaker" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/dhcpcd" name="platform/external/dhcpcd" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-	  <project path="external/dnsmasq" name="AOKP/external_dnsmasq" remote="aokp" revision="jb" />
+      <project path="external/aac" name="platform/external/aac" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/apache-http" name="platform/external/apache-http" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/apache-xml" name="platform/external/apache-xml" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/astl" name="platform/external/astl" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/bash" name="android_external_bash" remote="cm" revision="jellybean" />
+      <project path="external/bison" name="platform/external/bison" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/blktrace" name="platform/external/blktrace" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/bluetooth/bluez" name="AOKP/external_bluetooth_bluez" remote="aokp" revision="jb" />
+      <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/bouncycastle" name="platform/external/bouncycastle" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/bsdiff" name="platform/external/bsdiff" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/busybox" name="android_external_busybox" remote="cm" revision="jellybean" />
+      <project path="external/bzip2" name="platform/external/bzip2" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/checkpolicy" name="platform/external/checkpolicy" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/chromium" name="AOKP/external_chromium" remote="aokp" revision="jb" />
+      <project path="external/chromium-trace" name="platform/external/chromium-trace" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/cibu-fonts" name="platform/external/cibu-fonts" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/clang" name="platform/external/clang" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/compiler-rt" name="platform/external/compiler-rt" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/dbus" name="platform/external/dbus" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/dexmaker" name="platform/external/dexmaker" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/dhcpcd" name="platform/external/dhcpcd" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
+      <project path="external/dnsmasq" name="AOKP/external_dnsmasq" remote="aokp" revision="jb" />
 	  <project path="external/doclava" name="platform/external/doclava" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
 	  <project path="external/dropbear" name="platform/external/dropbear" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
 	  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
