@@ -17,7 +17,8 @@ Go into your "build" directory:
 
 edit envsetup.sh and change:
 
-    
+    arm) toolchaindir=arm/arm-linux-androideabi-4.6/bin
+
 to:
 
     arm) toolchaindir=linaro/bin
