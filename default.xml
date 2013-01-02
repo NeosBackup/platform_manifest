@@ -12,14 +12,6 @@
                fetch="https://github.com/"
                review="gerrit.aokp.co"
                revision="jellybean" /> 
-      <remote  name="ghh"
-               fetch="https://github.com/"
-               review="gerrit.aokp.co"
-               revision="jb" /> 
-      <remote  name="ghhh"
-               fetch="https://github.com/"
-               review="gerrit.aokp.co"
-               revision="master" />
       <default remote="aosp"
                    sync-j="7" /> 
       <project path="build" name="AOKP/android_build" remote="aokp" revision="jb" >
