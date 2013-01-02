@@ -1,21 +1,37 @@
 Sync my repository in your root working folder (ie: jbaokp):
+
     repo init -u https://github.com/IAmTheOneTheyCallNeo/platform_manifest.git -b jb
-then
+
+then:
+
     repo sync
+
 After sync, type the following commands to remove these two files:
+
     rm device/htc/vigor/overlay/packages/apps/Settings/res/values/config.xml
     rm device/htc/vigor/overlay/packages/apps/Torch/res/values/config.xml
+
 Go into your "build" directory:
+
     cd build
+
 edit envsetup.sh and change:
+
     
 to:
-           arm) toolchaindir=linaro/bin
+
+    arm) toolchaindir=linaro/bin
+
 Now go back to your root working folder and build your setup:
+
     . build/envsetup.sh
+
 Then initiate the following commands one by one by typing them in and hitting enter after each:
+
     make clean
     make clobber
     make installclean
+
 Now build the rom:
+
     brunch vigor
